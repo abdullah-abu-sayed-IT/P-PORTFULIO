@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdullah Abu Sayed | Ultimate Developer</title>
+<meta name="description" content="Elite Portfolio of Abdullah Abu Sayed – Python, DSA, Web Development | Future IT student Australia">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader"><div class="loader"></div></div>
+
+<!-- PARTICLE BACKGROUND -->
+<div id="particles-js"></div>
+
+<!-- SCROLL PROGRESS -->
+<div class="progress" id="progressBar"></div>
+
+<!-- NAVBAR -->
+<nav>
+<div class="nav-container">
+<h3 class="logo">AAS</h3>
+<ul>
+<li><a href="#home" class="nav-link active">Home</a></li>
+<li><a href="#skills" class="nav-link">Skills</a></li>
+<li><a href="#projects" class="nav-link">Projects</a></li>
+<li><a href="#contact" class="nav-link">Contact</a></li>
+</ul>
+<div id="modeToggle">🌙</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<header id="home">
+<div class="blob"></div>
+<div class="hero">
+<h1 class="gradient-text">Abdullah Abu Sayed</h1>
+<p id="typing"></p>
+<a href="#projects" class="btn">Explore Work</a>
+<a href="resume.pdf" class="btn" download>Download Resume</a>
+</div>
+</header>
+
+<!-- SKILLS -->
+<section id="skills" class="reveal">
+<h2>Skills</h2>
+<div class="skill"><p>Python</p><div class="bar"><span data-width="90%"></span></div></div>
+<div class="skill"><p>JavaScript</p><div class="bar"><span data-width="85%"></span></div></div>
+<div class="skill"><p>HTML & CSS</p><div class="bar"><span data-width="95%"></span></div></div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="reveal">
+<h2>Projects</h2>
+<div class="filters">
+<button data-filter="all" class="active">All</button>
+<button data-filter="python">Python</button>
+<button data-filter="js">JavaScript</button>
+</div>
+<div class="grid">
+<div class="card tilt" data-tech="python" onclick="openModal('Weather App','Python + API project')">
+<h3>Weather App</h3><p>Click to view</p>
+</div>
+<div class="card tilt" data-tech="js" onclick="openModal('Quiz App','JavaScript Interactive quiz')">
+<h3>Quiz App</h3><p>Click to view</p>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="reveal">
+<h2>Contact</h2>
+<p>Email: abdullah.abu.sayed02@gmail.com</p>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal()">&times;</span>
+<h3 id="modalTitle"></h3>
+<p id="modalDesc"></p>
+</div>
+</div>
+
+<!-- BACK TO TOP -->
+<button id="topBtn">↑</button>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
